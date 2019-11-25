@@ -129,6 +129,7 @@ dataToInsert = [68, 65, 32, 24, 26, 21, 19, 13, 16, 14]
 for i in dataToInsert:
     insertMin(h, i)
 print()
+
 print("After Insert: ", h, "\n")
 print90(h, 1, 0)
 
