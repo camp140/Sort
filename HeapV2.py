@@ -90,11 +90,13 @@ def print90(heap, index, level):
 
 
 def deleteMin(heap):
-    min = heap[1].data
     if len(heap) == 1:
         return heap.pop()
+
+    min = heap[1].data
     heap[1] = heap.pop().data
     dataIndex = 1
+
     while True:
         leftChildIndex = dataIndex * 2 if dataIndex * 2 < len(heap) else None
         rightChildIndex = dataIndex * 2 + 1 if dataIndex * 2 + 1 < len(heap) else None
